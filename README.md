@@ -32,3 +32,10 @@ Zone names and coordinates come from forever-db's Forever map positions (0-1000 
 an NPC has many spawns, nearby ones are averaged into a centre point (third value 1) and at most 3 points are shown.
 
 Changes made: filtered to the most relevant sources per item (best drop rates first) and reshaped into a compact format.
+
+## Maps
+
+`maps/` holds zone map images (1002x668) taken from the Warcraft Wiki's World of Warcraft: Forever zone maps. The artwork is
+(c) Blizzard Entertainment and is shown here only to illustrate item locations on a non-commercial fan site. World of Warcraft
+and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. These images are not covered
+by this repository's data licences and will be removed promptly at Blizzard's request.
