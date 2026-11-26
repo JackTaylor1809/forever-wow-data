@@ -1,6 +1,5 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
-import TalentBuild from "./TalentBuild.js"
 
 const FONT = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
 const TEXT = "#F4F5F7"
