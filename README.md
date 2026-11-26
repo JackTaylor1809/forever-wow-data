@@ -4,9 +4,14 @@ Item source data (drops, vendors, quest rewards) used by the Forever WoW armoury
 
 ## Where it comes from
 
-Derived from the [CMaNGOS Classic database](https://github.com/cmangos/classic-db), licensed under the
-GNU General Public License v3.0. That database describes the original Classic-era game, so entries
-**may differ in World of Warcraft: Forever**. Treat them as a guide, not a guarantee.
+Derived from [forever-db](https://github.com/foreverfraddons/forever-db), a database for World of Warcraft: Forever that
+merges several open sources and in-game recordings by Forever players. forever-db's merged data is licensed under the
+GNU General Public License v3.0; the sources behind it and their licences are listed in `FOREVER-DB-LICENSE-DATA.txt`
+(QuestieDB Forever, AllTheThings, VMaNGOS, cMaNGOS classic-db, pfQuest, Drop Tables contributors under CC BY-SA 4.0, and
+others). Their licence notices are included here (`FOREVER-DB-*.txt`, `CMANGOS-COPYRIGHT.md`, `ZONES-LICENSE-MIT.md`).
+
+Where Forever has its own data or players have recorded it in game, forever-db prefers that over Classic-era data. Items
+only Classic-era sources know about may still differ in World of Warcraft: Forever. Treat entries as a guide, not a guarantee.
 
 World of Warcraft content and materials are trademarks and copyrights of Blizzard Entertainment.
 This is a non-commercial fan project and is not affiliated with Blizzard Entertainment.
@@ -23,8 +28,7 @@ This is a non-commercial fan project and is not affiliated with Blizzard Enterta
     the spawns are too spread out to give a single position.
 - `manifest.json`: number of chunks.
 
-Zone names and coordinates are worked out from CMaNGOS spawn positions using zone bounds from the vanilla 1.12.1 client
-(`WorldMapArea`), taken from [TheGrayDot/wow-vanilla-world-coords](https://github.com/TheGrayDot/wow-vanilla-world-coords)
-(MIT licence, see `ZONES-LICENSE-MIT.md`). Zones near borders may be off, and spawns on Forever may differ.
+Zone names and coordinates come from forever-db's Forever map positions (0-1000 on each zone map, shown here as 0-100). Where
+an NPC has many spawns, nearby ones are averaged into a centre point (third value 1) and at most 3 points are shown.
 
-Changes made: filtered to the most relevant sources per item and reshaped into a compact format.
+Changes made: filtered to the most relevant sources per item (best drop rates first) and reshaped into a compact format.
